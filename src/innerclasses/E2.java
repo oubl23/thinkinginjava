@@ -17,7 +17,8 @@ public class E2{
         Selector selector = sequence.selector();
         while(!selector.end())
         {
-            System.out.print(select.current() + " " );
+            System.out.print(selector.current() + " " );
+            selector.next();
         }
     }
 }
