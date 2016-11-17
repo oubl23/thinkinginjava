@@ -23,13 +23,13 @@ class Sequence2 {
     }
 
     public boolean check(){
-        return this == ((SequenceSelector)selector).sequence();
+        return this == ((SequenceSelector)selector()).sequence();
     }
 }
 
 public class E4{
     public static void main(String[] args){
-        Sequence2 s = new Sequence2();
+        Sequence2 s = new Sequence2(10);
         System.out.println(s.check());
     }
 }

@@ -8,7 +8,7 @@ public class Parcell2 {
         private int i= 11;
         public int value(){return i;}
     }
-    class Destination{
+    static class Destination{
         private String label;
         Destination(String whereTo){
             label = whereTo;
@@ -36,5 +36,6 @@ public class Parcell2 {
         Parcell2 q = new Parcell2();
         Parcell2.Contests c = q.contests();
         Parcell2.Destination d= q.to("borneo");
+        Parcell2.Destination d2 = new Destination("he");
     }
 }
